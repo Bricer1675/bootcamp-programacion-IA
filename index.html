@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp de Programación e IA</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <h1>Bootcamp de Programación e IA</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre el Instructor</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <h2>Bienvenido al Bootcamp</h2>
+        <p>¡Descubre el apasionante mundo de la Programación y la Inteligencia Artificial! Aprende desde lo básico hasta lo avanzado con metodologías innovadoras y proyectos reales.</p>
+        <img src="img/bootcamp-banner.jpg" alt="Banner del Bootcamp">
+        <button onclick="window.location.href='#cursos'">Ver Cursos</button>
+    </section>
+    
+    <section id="sobre">
+        <h2>Sobre el Instructor</h2>
+        <img src="img/instructor.png" alt="Instructor">
+        <p>Hola, soy <strong>Charles Brito Ortiz</strong>, ingeniero de sistemas con más de 10 años de experiencia en educación y tecnología. Me apasiona enseñar programación e inteligencia artificial de manera práctica y divertida.</p>
+    </section>
+    
+    <section id="cursos">
+        <h2>Cursos Disponibles</h2>
+        <label for="curso-seleccion">Selecciona un curso:</label>
+        <select id="curso-seleccion">
+            <option value="intro-programacion">Introducción a la Programación</option>
+            <option value="fundamentos-ia">Fundamentos de Inteligencia Artificial</option>
+            <option value="machine-learning">Machine Learning desde Cero</option>
+        </select>
+        <button onclick="alert('Curso seleccionado: ' + document.getElementById('curso-seleccion').value)">Inscribirme</button>
+        
+        <h3>Lista de Cursos</h3>
+        <ul>
+            <li><input type="checkbox"> 📌 Introducción a la Programación</li>
+            <li><input type="checkbox"> 🤖 Fundamentos de Inteligencia Artificial</li>
+            <li><input type="checkbox"> 📊 Machine Learning desde Cero</li>
+            <li><input type="checkbox"> 💻 Desarrollo Web con HTML, CSS y JavaScript</li>
+        </ul>
+    </section>
+    
+    <section id="horario">
+        <h2>Horario del Bootcamp</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                    <th>Curso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>6:00 PM - 8:00 PM</td>
+                    <td>Introducción a la Programación</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>6:00 PM - 8:00 PM</td>
+                    <td>Fundamentos de Inteligencia Artificial</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>6:00 PM - 8:00 PM</td>
+                    <td>Machine Learning desde Cero</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas o quieres más información? ¡Escríbeme!</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="motivo">Motivo del contacto:</label>
+            <select id="motivo" name="motivo">
+                <option value="info">Información sobre los cursos</option>
+                <option value="inscripcion">Inscribirme en un curso</option>
+                <option value="otros">Otros</option>
+            </select>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Bootcamp de Programación e IA | Creado por Charles Brito Ortiz</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
